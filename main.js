@@ -1,6 +1,7 @@
 const dateButton = document.querySelector("#dateBtn");
 const dateAnswer = document.querySelector("#idea");
 const nearMeLink = document.querySelector("#nearMe")
+const activityIcon = document.querySelector("#activityIcon")
 
 let dateIdeas = [
   "Bowling",
@@ -22,6 +23,51 @@ randomDate = () => {
   let randomValue = dateIdeas[Math.floor(Math.random() * dateIdeas.length)];
   dateAnswer.textContent = randomValue;
 };
+
+displayIcon = () => {
+    if(dateAnswer.textContent === "Bowling"){
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/37/37734.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "icon"){
+        activityIcon.style.display='none'
+    } else if (dateAnswer.textContent === "Hiking") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/2017/2017204.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "Swimming") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/3412/3412879.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "Have a fire") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/482/482103.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "Camping") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/817/817219.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "Road Trip") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/2782/2782377.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "Zoo") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/884/884188.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "BBQ") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/823/823317.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "Rodeo") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/37/37480.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "Sushi") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/1539/1539701.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "Dinner & Movie") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/738/738096.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "Ice cream") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/3077/3077188.png"
+        activityIcon.style.display='block'
+    } else if (dateAnswer.textContent === "Concert") {
+        activityIcon.src = "https://cdn-icons-png.flaticon.com/512/2394/2394757.png"
+        activityIcon.style.display='block'
+    }
+}
 
 nearMe = () => {
     if(dateAnswer.textContent === "Bowling"){
@@ -48,5 +94,6 @@ nearMe = () => {
 }
 
 dateButton.addEventListener("click", randomDate);
+dateButton.addEventListener("click", displayIcon)
 nearMeLink.addEventListener("click", nearMe)
 
