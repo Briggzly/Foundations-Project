@@ -42,8 +42,6 @@
     color: #131313;
     font-size: 50px;
     font: bold;
-    -webkit-text-stroke-width:1.3px;
-    -webkit-text-stroke-color:white;
 }
 
 #nearMe {
@@ -71,4 +69,16 @@
     justify-content: center;
     align-items: center;
     margin: 15px;
+}
+
+#restNav {
+
+    height: 80px;
+    background: #131313;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
 }

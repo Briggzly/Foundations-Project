@@ -90,6 +90,15 @@ nearMe = () => {
         nearMeLink.href = "https://www.google.com/search?q=ice+cream+near+me"
     } else if (dateAnswer.textContent === "Concert") {
         nearMeLink.href = "https://www.google.com/search?q=concerts+near+me"
+    } else if (dateAnswer.textContent === "BBQ") {
+        nearMeLink.href = ""
+        alert(`Nothing near fo ${dateAnswer.textContent}`)
+    } else if (dateAnswer.textContent === "Have a fire") {
+        nearMeLink.href = ""
+        alert(`Nothing near for ${dateAnswer.textContent}.`)
+    } else if (dateAnswer.textContent === "Road Trip") {
+        nearMeLink.href = ""
+        alert(`Get out there and explore!`)
     }
 }
 
