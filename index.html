@@ -14,19 +14,28 @@
       <button id="dateBtn">Get Date Idea</button>
       <br />
       <p id="idea"></p>
-      <img id="activityIcon" src="icon" style="display: none;">
+      <img id="activityIcon" src="icon" style="display: none" />
       <br />
       <a id="nearMe" href="" target="_blank"
-        >Near Me <img
-        id="magGlass"src="https://cdn-icons-png.flaticon.com/512/684/684809.png"</a
-      >
+        >Near Me
+        <img
+          id="magGlass"
+          src="https://cdn-icons-png.flaticon.com/512/684/684809.png"
+      /></a>
     </div>
-
-    <div id="restNav">Restaurants</div>
-    <div class="restaurants">
-
+    <div>
+      <div id="restNav">Date Links</div>
+      <div class="dNotes">
+        <form id="dateNotes">
+            <input type="text" id="dateLinks" placeholder="Enter links to dates"/>
+            <button id="addBtn">Add</button>
+        </form>
+        <section id="links-container">
+          <ul></ul>
+        </section>
+      </div>
     </div>
-    <script src="/server/index.js"></script>
+    <!-- <script src="/server/index.js"></script> -->
     <script src="main.js"></script>
   </body>
 </html>

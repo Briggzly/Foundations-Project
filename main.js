@@ -2,6 +2,8 @@ const dateButton = document.querySelector("#dateBtn");
 const dateAnswer = document.querySelector("#idea");
 const nearMeLink = document.querySelector("#nearMe")
 const activityIcon = document.querySelector("#activityIcon")
+const form = document.querySelector("#dateNotes")
+const list = document.querySelector("ul")
 
 let dateIdeas = [
   "Bowling",
@@ -92,17 +94,43 @@ nearMe = () => {
         nearMeLink.href = "https://www.google.com/search?q=concerts+near+me"
     } else if (dateAnswer.textContent === "BBQ") {
         nearMeLink.href = ""
-        alert(`Nothing near fo ${dateAnswer.textContent}`)
+        nearMeLink.target= ""
+        alert(`Nothing near for ${dateAnswer.textContent}`)
     } else if (dateAnswer.textContent === "Have a fire") {
         nearMeLink.href = ""
+        nearMeLink.target= ""
         alert(`Nothing near for ${dateAnswer.textContent}.`)
     } else if (dateAnswer.textContent === "Road Trip") {
         nearMeLink.href = ""
+        nearMeLink.target= ""
         alert(`Get out there and explore!`)
     }
+}
+
+submitHandler = (e) => {
+    e.preventDefault()
+    
+    console.log('hello')
+    let link = document.querySelector('#dateLinks')
+
+
+
+    let newLi = document.createElement('li')
+    let newA = document.createElement('a')
+
+    newA.textContent = link.value
+    
+    newA.href = `${link.value}`
+
+    newLi.appendChild(newA)
+    list.appendChild(newLi)
+
+
+    link.value = ''
 }
 
 dateButton.addEventListener("click", randomDate);
 dateButton.addEventListener("click", displayIcon)
 nearMeLink.addEventListener("click", nearMe)
+form.addEventListener("submit", submitHandler)
 

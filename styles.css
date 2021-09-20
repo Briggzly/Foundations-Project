@@ -1,84 +1,106 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 #navbar {
-    height: 80px;
-    background: #131313;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
+  height: 80px;
+  background: #131313;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 .dates {
-    height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #735CDD;
-    padding: 30px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #735cdd;
+  padding: 30px;
 }
 
 #dateBtn {
+  border-radius: 4px;
+  height: 30px;
+  width: 100px;
+  background-color: #131313;
+  color: white;
+  box-shadow: black;
+  border: none;
+  outline: none;
+}
+
+#idea {
+  color: #131313;
+  font-size: 50px;
+  font: bold;
+}
+
+#nearMe {
+  text-decoration: none;
+  color: black;
+}
+
+#nearMe:hover {
+  color: white;
+}
+
+#dateBtn:hover {
+  background: #8e2de2;
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+
+#magGlass {
+  height: 16px;
+}
+
+#activityIcon {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+#restNav {
+  height: 80px;
+  background: #131313;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.dNotes {
+  height: 500px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #000000;
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);
+  background: linear-gradient(to bottom, #434343, #000000);
+  padding: 30px;
+}
+
+
+#addBtn {
     border-radius: 4px;
-    height: 30px;
-    width: 100px;
-    background-color: #131313;
+    height: 25px;
+    width: 40px;
+    background-color: #735cdd;
     color: white;
     box-shadow: black;
     border: none;
     outline: none;
-}
-
-#idea {
-    color: #131313;
-    font-size: 50px;
-    font: bold;
-}
-
-#nearMe {
-    text-decoration: none;
-    color: black;
-}
-
-#nearMe:hover {
-    color: white;
-}
-
-#dateBtn:hover {
-    background: #8E2DE2;
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-    background: linear-gradient(to right, #4A00E0, #8E2DE2); 
-}
-
-#magGlass {
-    height: 16px;
-}
-
-#activityIcon {
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-}
-
-#restNav {
-
-    height: 80px;
-    background: #131313;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-
 }
