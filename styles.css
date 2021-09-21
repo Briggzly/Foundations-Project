@@ -129,6 +129,11 @@ ol {
 
 ol a {
   color: white;
+  text-decoration: none;
+}
+
+ol a:hover {
+  color: #735cdd;
 }
 
 #links-container {
@@ -137,5 +142,4 @@ ol a {
   align-items: center;
   height: 300px;
   width: 100%;
-  text-align: center;
 }
