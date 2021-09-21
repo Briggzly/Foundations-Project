@@ -104,3 +104,38 @@
     border: none;
     outline: none;
 }
+
+#addBtn:hover {
+  background: #8e2de2;
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+
+#dateLinks {
+  border-radius: 4px;
+  height: 25px;
+  border: none;
+}
+
+#dateName {
+  border-radius: 4px;
+  height: 25px;
+  border:none;
+}
+
+ol {
+  color: white;
+}
+
+ol a {
+  color: white;
+}
+
+#links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+}

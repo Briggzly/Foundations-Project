@@ -3,7 +3,7 @@ const dateAnswer = document.querySelector("#idea");
 const nearMeLink = document.querySelector("#nearMe")
 const activityIcon = document.querySelector("#activityIcon")
 const form = document.querySelector("#dateNotes")
-const list = document.querySelector("ul")
+const list = document.querySelector("ol")
 
 let dateIdeas = [
   "Bowling",
@@ -112,21 +112,25 @@ submitHandler = (e) => {
     
     console.log('hello')
     let link = document.querySelector('#dateLinks')
+    let name = document.querySelector('#dateName')
 
 
 
     let newLi = document.createElement('li')
     let newA = document.createElement('a')
 
-    newA.textContent = link.value
+    newA.textContent = name.value
     
     newA.href = `${link.value}`
+
+    newA.target = "_blank"
 
     newLi.appendChild(newA)
     list.appendChild(newLi)
 
 
     link.value = ''
+    name.value = ''
 }
 
 dateButton.addEventListener("click", randomDate);
